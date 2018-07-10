@@ -1,0 +1,8 @@
+{
+  "name": "RideMySpot",
+  "app_id": "d218792a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
