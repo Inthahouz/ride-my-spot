@@ -1,14 +1,33 @@
-<ion-header>
-  <ion-navbar>
+<!-- <ion-header>
+  <ion-navbar color="blue">
     <ion-title>
-      Ionic Blank
+      Ride My Spot
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content ion-text padding-top color="light" class="bg-blue">
+    <!-- <ion-img width="80" height="110" src="../../assets/imgs/logo.png" padding-vertical style="background: transparent; display:block; margin: 0 auto;"></ion-img> -->
+  <p padding-horizontal class="text">Ride My Spot décline toute responsabilité quant aux conséquences possibles à l'utilisation de cette application.</p>
+  <p padding-horizontal>Il est tout de même recommandé de suivre ces régles pour votre propre sécurité :</p>
+  <ion-list no-lines ion-text>
+    <ion-item color="blue">
+      <ion-icon name="school" item-start></ion-icon>
+      Choisissez un spot à votre mesure
+    </ion-item>
+    <ion-item color="blue">
+      <ion-icon name="walk" item-start></ion-icon>
+      Attention certains spots peuvent se<br> trouver dans des zones<br> difficiles d'accès
+    </ion-item>
+    <ion-item color="blue">
+      <ion-icon name="snow" item-start></ion-icon>
+      Prenez connaissance de la météo
+    </ion-item>
+    <ion-item color="blue">
+      <ion-icon name="phone-portrait" item-start></ion-icon>
+      Informer une personne au minimum<br> de votre sortie
+    </ion-item>
+  </ion-list>
+  <button ion-button full color="light">J' ai compris</button>
+  <button ion-button full (click)="redirectGoogle();" color="light">Trop dangereux pour moi</button>
 </ion-content>
