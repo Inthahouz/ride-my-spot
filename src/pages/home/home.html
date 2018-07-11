@@ -10,7 +10,7 @@
     <!-- <ion-img width="80" height="110" src="../../assets/imgs/logo.png" padding-vertical style="background: transparent; display:block; margin: 0 auto;"></ion-img> -->
   <p padding-horizontal class="text">Ride My Spot décline toute responsabilité quant aux conséquences possibles à l'utilisation de cette application.</p>
   <p padding-horizontal>Il est tout de même recommandé de suivre ces régles pour votre propre sécurité :</p>
-  <ion-list no-lines ion-text>
+  <ion-list no-lines>
     <ion-item color="blue">
       <ion-icon name="school" item-start></ion-icon>
       Choisissez un spot à votre mesure
@@ -28,6 +28,6 @@
       Informer une personne au minimum<br> de votre sortie
     </ion-item>
   </ion-list>
-  <button ion-button full color="light">J' ai compris</button>
-  <button ion-button full (click)="redirectGoogle();" color="light">Trop dangereux pour moi</button>
+  <button ion-button round (click)="connexionPage()" color="light">J' ai compris</button>
+  <button ion-button round margin-top (click)="redirectGoogle();" color="light">Trop dangereux pour moi</button>
 </ion-content>

@@ -1,0 +1,37 @@
+page-index {
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        background: palevioletred;
+    }
+
+    .list-ios{
+        margin: 20px 0 0;
+    }
+
+    .list-md{
+        margin: 0;
+    }
+
+    .item{
+        background: transparent;
+        text-align: center;
+
+         &:last-child{
+            background: red;
+        }
+
+        img{
+           max-height: 40px;
+           height: 100%;
+           width: auto;
+           vertical-align: middle;
+        }
+    }
+
+    .label-ios,
+    .label-md{
+        margin: 2px 0;
+    }
+}

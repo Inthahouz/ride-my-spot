@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import { InAppBrowser } from 'ionic-native';
+// import { ConnexionPage } from '../connexion/connexion';
+import { IndexPage } from '../index/index';
 
 @Component({
   selector: 'page-home',
@@ -18,4 +20,8 @@ export class HomePage {
   });
   }
 
+  connexionPage() {
+    // this.navCtrl.push(ConnexionPage);
+    this.navCtrl.push(IndexPage);
+  }
 }
